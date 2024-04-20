@@ -1,0 +1,246 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+
+
+}
+
+
+
+.header .head3 {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.header .head3 .two-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .head1 {
+    flex-grow: 1;
+}
+.header .head2 {
+    flex-grow: 8;
+    position: relative;
+}
+
+.header .head2 input{
+    width:98%;
+    background-color: aliceblue;
+    border-radius:0.60rem;
+    border:none;
+}
+.header .head2 input:focus{
+  outline-style: none;
+  box-shadow: none;
+  
+}
+.header .head2 input[type="search"]{
+    font-size:1.2rem;
+    padding:0.65rem  0rem   0.65rem 2.2rem;
+}
+.header .head2 i{
+    position: absolute;
+    top:13px;
+    left:10px;
+    font-size:1.2rem;
+}
+.header .head3 {
+    flex-grow: 4;
+}
+
+.header .head3 i {
+    display: inline-block;
+}
+
+.header .head3 .menu1 .dron .drop {
+    display: none;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px rgb(244, 243, 243);
+    padding:1rem;
+
+}
+
+.header .head3 .menu1 .dron li {
+    list-style: none;
+}
+
+.header .head3 .menu1 .dron .login:hover~.drop {
+    display: block;
+    margin-top: 10px;
+    position: absolute;
+    top: 6%;
+    left: 66%;
+    z-index: 2;
+
+}
+.header .head3 .menu1 .dron .login i{
+    margin-right:0.5rem;
+    font-size:1.2rem;
+}
+.header .head3 .menu1 .dron .login i:hover{
+    color:blue;
+}
+.header .head3 .menu1 .dron .login a{
+    font-size:1.3rem;
+    text-decoration: none;
+}
+.header .head3 .menu1 .dron .drop .two-part .part1 p{
+    
+    margin-right:2rem;
+    font-size:1.2rem;
+    margin-bottom: 0.8rem;
+    
+}
+.header .head3 .menu1 .dron .drop .two-part .part2 a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.header .head3 .menu1 .dron li{
+    font-size:1.1rem;
+    
+    display: inline-block;
+    margin-left:0.5rem;
+    text-transform: capitalize;
+    margin:1rem;
+}
+
+.header .head3 .menu2 i{
+font-size: 1.2rem;
+}
+.header  .head3 .menu2 span{
+    font-size:1.3rem;
+    text-transform: capitalize;
+    margin-left:0.5rem;
+}
+.header .head3 .menu3 i{
+    font-size: 1.2rem;
+ }
+.header  .head3 .menu3 span{
+        font-size:1.3rem;
+    
+        margin-left:0.5rem;
+ }
+/****************   section  *****************/
+.container  .section{
+     margin:0.5rem   1rem;
+     background-color:white;
+     padding:  1rem   4rem; 
+    
+}
+.section .main-section{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/***********************    main-counter*********************/
+.main-counter{
+    margin:1rem 1rem;
+    
+}
+.main-counter .slider{
+    overflow: hidden;
+}
+.main-counter .slider figure{
+    position:relative;
+    width:500%;
+    margin:0px;
+    left:0px;
+    animation:10s slider infinite;
+}
+.slider figure img{
+    width:20%;
+    height:100%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding:3px;
+    margin-left:-5px;
+}
+@keyframes slider {
+    0%{
+     left:0;
+    }
+    15%{
+        left:0%;
+    }
+    
+    25%{
+     left:-100%;
+    }
+    40%{
+        left:-100%;
+    }
+    
+    50%{
+     left:-200%;
+    }
+    65%{
+        left:-200%;
+    }
+   75%{
+     left:-300%;
+   }
+
+    
+    100%{
+     left:-300%;
+    }
+
+   
+}
+
+/************************* content  ************************/
+.content{
+    margin:1rem 1rem;
+    background-color:white ;
+}
+.content h2{
+    text-transform: capitalize;
+padding: 1rem;
+}
+.content .main-content{
+    overflow-x: auto;
+    display:flex;
+    width:100%;
+    overflow-y: hidden;
+    justify-content: space-between;
+}
+.content .main-content .main-content1,.main-content2,.main-content3,.main-content4,.main-content5,.main-content6,.main-content7{
+margin:0.5rem;
+border:2px solid gainsboro;
+text-align: center;
+font-size: 1rem;
+text-transform: capitalize;
+padding:0.5rem;
+}
+.content .main-content img{
+     width:204px;
+     height:192px;
+     padding:1rem;
+}
+
+
+
+
+
+
+
+
+
